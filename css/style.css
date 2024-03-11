@@ -1,0 +1,198 @@
+#divv{
+  border:2px solid;
+  height: 75px;
+  overflow: auto;
+}
+
+#div{
+  background-color: cyan;
+  display: block;
+  visibility: visible;
+}
+#span{
+  background-color: cyan;
+}
+
+#container{
+  border: 2px solid;
+}
+
+/*!*using descendant combinator*! an empty space*/
+#container ~ p{
+  background-color: yellow ;
+}
+
+/*!*using children combinator*! a > */
+/*!*using general sibling combinator*! a ~ */
+/*!*using children combinator*! a + */
+
+h1::first-letter{
+  font-size: 2em;
+  font-style: italic;
+}
+p::first-line{
+  background-color: yellow;
+}
+p::selection{
+  color: blue;
+  background-color: lawngreen;
+}
+#fruit li::before{
+  content: "--";
+}
+#apple::after{
+  content: "🍎";
+}
+#orange::after{
+  content: "🍊";
+}
+#banana::after{
+  content: "🍌";
+}
+#fruit li::marker{
+  content: "✔️";
+  color: cyan;
+  font-size: 1.2em;
+}
+
+.pagination{
+  text-align: center;
+}
+.pagination a{
+  color: black;
+  text-decoration: none;
+  padding: 8px 15px;
+  display: inline-block;
+}
+.pagination a.active{
+  background-color: green;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active){
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.dropdown{
+  display: inline-block;
+}
+.dropdown button{
+  background-color: cyan;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 1opx 15px;
+}
+.dropdown .content{
+  display: none;
+  background-color: #faf4f4;
+  position: absolute;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.96);
+}
+.dropdown:hover .content{
+  display: block;
+}
+.dropdown:hover button{
+  background-color:antiquewhite ;
+}
+.dropdown a:hover{
+  background-color: lawngreen;
+}
+
+
+#h1{
+  text-align: center;
+}
+
+.navbar ul{
+  list-style-type: none;
+  background-color: blueviolet;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover{
+  background-color: #19b2b2;
+}
+
+.navbar li{
+  float: left;
+}
+
+main{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+h3{
+  background-color: aliceblue;
+  text-align: center;
+}
+
+*{
+  box-sizing: border-box;
+}
+aside{
+  width: 20%;
+  float: left;
+  padding: 10px;
+}
+
+section{
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+
+article{
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+
+footer{
+  clear:both;
+}
+
+@media screen and (max-width: 600px){
+  aside,section,article{
+    width: 100%;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
